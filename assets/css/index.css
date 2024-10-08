@@ -13,7 +13,21 @@
     list-style: none;
 }
 
-/* Estilos generales para las tarjetas de habilidades */
+/*
+    Estilos de tarjeta modal
+*/
+figure {
+    border: 1px solid black;
+    padding: 0.5%;
+    box-shadow: 3px 3px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+figure:hover {
+    transform: scale(1.05);
+    background-color: #2c3e50;
+}
+
 .skills-container {
     display: flex;
     flex-wrap: wrap;
@@ -69,6 +83,9 @@
     }
 }
 
+/*
+    Paleta de colores
+*/
 :root {
     --color2: #00d4cf;
     --color3: #00afbb;
@@ -113,3 +130,4 @@ body {
     background-color: var(--color5);
     border-color: var(--color5);
 }
+
