@@ -1,0 +1,18 @@
+/*
+    Elementos Individuales
+*/
+#profilePhoto{
+    height: 256px;
+    width: 256px;
+    box-shadow: 0 0 10px black;
+    border-radius: 150px;
+    background-color: white;
+}
+
+#listaIdiomas{
+    list-style: none;
+}
+
+/*
+    Imagenes de las caracteristicas
+*/

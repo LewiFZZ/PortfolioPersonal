@@ -4,11 +4,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Home - Brand</title>
+    <title>levijcdf</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&amp;display=swap">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/index.css">
 </head>
 
 <body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="72">
@@ -18,13 +19,13 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">MIS caracteristicas</a></li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">Sobre Mí</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">COntactame</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contáctame</a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <header class="text-center text-white bg-primary masthead">
-        <div class="container"><img class="img-fluid d-block mx-auto mb-5" src="assets/img/profile.png">
+        <div class="container"><img class="img-fluid d-block mx-auto mb-5" src="assets/img/profile.png" id="profilePhoto">
             <h1>Levi Josué Candeias de Figueiredo</h1>
             <hr class="star-light">
             <h2 class="fw-light mb-0">Desarrollador Web - Entusiasta de GNU/Linux - Asesor de CiberSeguridad</h2>
@@ -38,7 +39,7 @@
                 <div class="col-md-6 col-lg-4"><a class="d-block mx-auto portfolio-item" href="#portfolio-modal-1" data-bs-toggle="modal">
                         <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
                             <div class="text-center text-white my-auto portfolio-item-caption-content w-100"><i class="fa fa-search-plus fa-3x"></i></div>
-                        </div><img class="img-fluid" src="assets/img/portfolio/cabin.png">
+                        </div><img class="img-fluid" src="assets/img/portfolio/language.jpg">
                     </a></div>
                 <div class="col-md-6 col-lg-4"><a class="d-block mx-auto portfolio-item" href="#portfolio-modal-2" data-bs-toggle="modal">
                         <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
@@ -103,7 +104,7 @@
     </section>
     <section id="contact">
         <div class="container">
-            <h2 class="text-uppercase text-center text-secondary mb-0">Contactame</h2>
+            <h2 class="text-uppercase text-center text-secondary mb-0">Contáctame</h2>
             <hr class="star-dark mb-5">
             <div class="row">
                 <div class="col-lg-8 mx-auto">
@@ -130,25 +131,32 @@
     <footer class="text-center footer">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase mb-4">Mi dirección</h4>
-                    <p>Rua Dom Augusto Eduardo Nunes, S/N<br>Vivenda Figueiredo<br>Elvas, Portalegre, Portugal</p>
-                </div>
-                <div class="col-md-4 offset-xl-4 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase">Encuentráme</h4>
-                    <ul class="list-inline">
-                        <li class="list-inline-item"><a class="btn btn-outline-light text-center btn-social rounded-circle" role="button" href="#"><i class="fa fa-github fa-fw"></i></a></li>
-                        <li class="list-inline-item"><a class="btn btn-outline-light text-center btn-social rounded-circle" role="button" href="#"><i class="fa fa-linkedin-square fa-fw"></i></a></li>
-                        <li class="list-inline-item"><a class="btn btn-outline-light text-center btn-social rounded-circle" role="button" href="#"><i class="fa fa-google fa-fw"></i></a></li>
-                    </ul>
-                </div>
+            <div class="col-md-4 mb-5 mb-lg-0">
+                <h4 class="text-uppercase mb-4">Mi dirección</h4>
+                <p>Rua Dom Augusto Eduardo Nunes, S/N<br>Vivenda Figueiredo<br>Elvas, Portalegre, Portugal</p>
+            </div>
+            <div class="col-md-4 mb-5 mb-lg-0">
+                <h4 class="text-uppercase mb-4">Información Adicional</h4>
+                <p>Disponible para proyectos freelance y colaboraciones.</p>
+            </div>
+            <div class="col-md-4 mb-5 mb-lg-0"></div>
+                <h4 class="text-uppercase">Encuentráme</h4>
+                <ul class="list-inline">
+                <li class="list-inline-item"><a class="btn btn-outline-light text-center btn-social rounded-circle" role="button" href="#"><i class="fa fa-github fa-fw"></i></a></li>
+                <li class="list-inline-item"><a class="btn btn-outline-light text-center btn-social rounded-circle" role="button" href="#"><i class="fa fa-linkedin-square fa-fw"></i></a></li>
+                <li class="list-inline-item"><a class="btn btn-outline-light text-center btn-social rounded-circle" role="button" href="#"><i class="fa fa-google fa-fw"></i></a></li>
+                </ul>
+            </div>
             </div>
         </div>
     </footer>
     <div class="text-center text-white copyright py-4">
         <div class="container"><small>Copyright © Levi Josué Candeias de Figueiredo 2024</small></div>
     </div>
+
+
     <div class="d-lg-none scroll-to-top position-fixed rounded"><a class="text-center d-block rounded text-white" href="#page-top"><i class="fa fa-chevron-up"></i></a></div>
+    
     <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-1">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
@@ -157,9 +165,19 @@
                     <div class="container text-center">
                         <div class="row">
                             <div class="col-lg-8 mx-auto">
-                                <h2 class="text-uppercase text-secondary mb-0">Project Name</h2>
-                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/portfolio/cabin.png">
-                                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                <h2 class="text-uppercase text-secondary mb-0">Idiomas</h2>
+                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/portfolio/language.jpg">
+                                <p class="mb-5">
+                                    <ul id="listaIdiomas">
+                                        <li>Tengo dominio avanzado de 3 idiomas: 
+                                            <ul>
+                                                <li>Portugués (Nativo);</li>
+                                                <li>Castellano (Muy Avanzado);</li>
+                                                <li>Ingles (Avanzado);</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </p>
                             </div>
                         </div>
                     </div>
