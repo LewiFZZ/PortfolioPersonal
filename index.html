@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html data-bs-theme="light" lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -14,107 +13,114 @@
 
 <body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="72">
     <nav class="navbar navbar-expand-lg fixed-top bg-secondary text-uppercase" id="mainNav">
-        <div class="container"><a class="navbar-brand" href="#page-top">Levijcdf</a><button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler text-white bg-primary text-uppercase rounded" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+        <div class="container">
+            <a class="navbar-brand" href="#page-top" data-i18n="navbar_brand">Levijcdf</a>
+            <button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler text-white bg-primary text-uppercase rounded" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">MIS caracteristicas</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">Sobre Mí</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contáctame</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio" data-i18n="navbar_caracteristicas">MIS CARACTERÍSTICAS</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about" data-i18n="navbar_about">SOBRE MÍ</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact" data-i18n="navbar_contact">CONTÁCTAME</a></li>
                 </ul>
+                <div class="ms-3 d-flex align-items-center gap-2">
+                    <button class="btn btn-sm btn-outline-light" onclick="changeLanguage('es')">ES</button>
+                    <button class="btn btn-sm btn-outline-light" onclick="changeLanguage('en')">EN</button>
+                    <button class="btn btn-sm btn-outline-light" onclick="changeLanguage('pt')">PT</button>
+                </div>
             </div>
         </div>
     </nav>
     <header class="text-center text-white bg-primary masthead">
-        <div class="container"><img class="img-fluid d-block mx-auto mb-5" src="assets/img/profile.png" id="profilePhoto">
-            <h1>Levi Josué Candeias de Figueiredo</h1>
+        <div class="container">
+            <img class="img-fluid d-block mx-auto mb-4" src="assets/img/profile.png" id="profilePhoto" style="max-width: 300px; border-radius: 50%; box-shadow: 0 4px 16px rgba(0,0,0,0.2);">
+            <h1 class="mb-1" data-i18n="nombre">Levi Josué Candeias de Figueiredo</h1>
+            <h3 class="fw-light mb-2" data-i18n="titulo">Desarrollador Web Fullstack</h3>
+            <div class="mb-3">
+                <span class="badge bg-light text-primary me-2">+351 967-431-023</span>
+                <span class="badge bg-light text-primary me-2">+34 744-763-613</span>
+                <span class="badge bg-light text-primary me-2">levijcfigueiredowebdev@gmail.com</span>
+                <span class="badge bg-light text-primary">levijcdf.net</span>
+            </div>
             <hr class="star-light">
-            <p class="lead mb-0">Apasionado de las tecnologías, con experiencia en desarrollo de aplicaciones SPA modernas y APIs Rest seguras.<br>Siempre aprendiendo y buscando aportar valor real a los proyectos.</p>
+            <p class="lead mb-0" data-i18n="presentacion">Apasionado de las tecnologías, con experiencia en desarrollo de aplicaciones SPA modernas y APIs Rest seguras. Siempre aprendiendo y buscando aportar valor real a los proyectos.</p>
         </div>
     </header>
     
     <section id="portfolio" class="portfolio py-5 bg-light">
         <div class="container">
-            <h2 class="text-uppercase text-center text-secondary mb-4">Perfil Técnico y Personal</h2>
-            <div id="perfil_tecnico">
-                <div class="row g-4 justify-content-center align-items-stretch">
-                    <!-- Tecnologías -->
-                    <div class="col-md-6 col-lg-4">
-                        <button class="card h-100 shadow-sm border-0 text-start p-0 w-100" data-bs-toggle="modal" data-bs-target="#modalTecnologias" style="background: none; border: none;">
-                            <div class="card-body">
-                                <h5 class="card-title text-primary"><i class="fa fa-cogs me-2"></i>Tecnologías</h5>
-                                <ul class="list-unstyled mb-0">
-                                    <li><strong>Frameworks:</strong> Angular, NestJS, ASP.NET Core...</li>
-                                    <li><strong>Lenguajes:</strong> Java, Python, C...</li>
-                                    <li><em>Haz clic para ver más</em></li>
-                                </ul>
-                            </div>
-                        </button>
-                    </div>
-                    <!-- Soft Skills -->
-                    <div class="col-md-6 col-lg-4">
-                        <button class="card h-100 shadow-sm border-0 text-start p-0 w-100" data-bs-toggle="modal" data-bs-target="#modalSoftSkills" style="background: none; border: none;">
-                            <div class="card-body">
-                                <h5 class="card-title text-success"><i class="fa fa-users me-2"></i>Soft Skills</h5>
-                                <ul class="list-unstyled mb-0">
-                                    <li>Trabajo en equipo</li>
-                                    <li>Facilidad en aprender idiomas</li>
-                                    <li><em>Haz clic para ver más</em></li>
-                                </ul>
-                            </div>
-                        </button>
-                    </div>
-                    <!-- Hard Skills -->
-                    <div class="col-md-6 col-lg-4">
-                        <button class="card h-100 shadow-sm border-0 text-start p-0 w-100" data-bs-toggle="modal" data-bs-target="#modalHardSkills" style="background: none; border: none;">
-                            <div class="card-body">
-                                <h5 class="card-title text-danger"><i class="fa fa-wrench me-2"></i>Hard Skills</h5>
-                                <ul class="list-unstyled mb-0">
-                                    <li>Desarrollo Fullstack</li>
-                                    <li>Troubleshooting</li>
-                                    <li><em>Haz clic para ver más</em></li>
-                                </ul>
-                            </div>
-                        </button>
-                    </div>
-                    <!-- Idiomas -->
-                    <div class="col-md-6 col-lg-4">
-                        <button class="card h-100 shadow-sm border-0 text-start p-0 w-100" data-bs-toggle="modal" data-bs-target="#modalIdiomas" style="background: none; border: none;">
-                            <div class="card-body">
-                                <h5 class="card-title text-info"><i class="fa fa-language me-2"></i>Idiomas</h5>
-                                <ul class="list-unstyled mb-0">
-                                    <li>Inglés (Alto Nivel)</li>
-                                    <li>Portugués (Lengua Materna)</li>
-                                    <li><em>Haz clic para ver más</em></li>
-                                </ul>
-                            </div>
-                        </button>
-                    </div>
-                    <!-- Experiencia -->
-                    <div class="col-md-6 col-lg-4">
-                        <button class="card h-100 shadow-sm border-0 text-start p-0 w-100" data-bs-toggle="modal" data-bs-target="#modalExperiencia" style="background: none; border: none;">
-                            <div class="card-body">
-                                <h5 class="card-title text-warning"><i class="fa fa-briefcase me-2"></i>Experiencia</h5>
-                                <ul class="list-unstyled mb-0">
-                                    <li><strong>Prácticas | Vitaly</strong></li>
-                                    <li>Desarrollo FrontEnd en Angular + Bootstrap</li>
-                                    <li><em>Haz clic para ver más</em></li>
-                                </ul>
-                            </div>
-                        </button>
-                    </div>
-                    <!-- Educación -->
-                    <div class="col-md-6 col-lg-4">
-                        <button class="card h-100 shadow-sm border-0 text-start p-0 w-100" data-bs-toggle="modal" data-bs-target="#modalEducacion" style="background: none; border: none;">
-                            <div class="card-body">
-                                <h5 class="card-title text-secondary"><i class="fa fa-graduation-cap me-2"></i>Educación</h5>
-                                <ul class="list-unstyled mb-0">
-                                    <li><strong>Ensino Secundário</strong></li>
-                                    <li><strong>Ciclo Formativo de Grado Superior</strong></li>
-                                    <li><em>Haz clic para ver más</em></li>
-                                </ul>
-                            </div>
-                        </button>
-                    </div>
+            <h2 class="text-uppercase text-center text-secondary mb-4" data-i18n="perfil_tecnico">PERFIL TÉCNICO Y PERSONAL</h2>
+            <div class="row g-4 justify-content-center align-items-stretch" id="perfil_tecnico">
+                <div class="col-md-6 col-lg-4 d-flex justify-content-center">
+                    <button class="card h-100 shadow-sm border-0 text-start p-0 w-100" data-bs-toggle="modal" data-bs-target="#modalTecnologias" style="background: none; border: none;">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary"><i class="fa fa-cogs me-2"></i><span data-i18n="tecnologias">Tecnologías</span></h5>
+                            <ul class="list-unstyled mb-0">
+                                <li><strong data-i18n="frameworks">Frameworks:</strong> <span data-i18n="frameworks_lista">Angular, NestJS, ASP.NET Core...</span></li>
+                                <li><strong data-i18n="lenguajes">Lenguajes:</strong> <span data-i18n="lenguajes_lista">Java, Python, C...</span></li>
+                                <li><em data-i18n="haz_clic">Haz clic para ver más</em></li>
+                            </ul>
+                        </div>
+                    </button>
+                </div>
+                <div class="col-md-6 col-lg-4 d-flex justify-content-center">
+                    <button class="card h-100 shadow-sm border-0 text-start p-0 w-100" data-bs-toggle="modal" data-bs-target="#modalSoftSkills" style="background: none; border: none;">
+                        <div class="card-body">
+                            <h5 class="card-title text-success"><i class="fa fa-users me-2"></i><span data-i18n="soft_skills">Soft Skills</span></h5>
+                            <ul class="list-unstyled mb-0">
+                                <li data-i18n="trabajo_equipo">Trabajo en equipo</li>
+                                <li data-i18n="facilidad_idiomas">Facilidad en aprender idiomas</li>
+                                <li><em data-i18n="haz_clic">Haz clic para ver más</em></li>
+                            </ul>
+                        </div>
+                    </button>
+                </div>
+                <div class="col-md-6 col-lg-4 d-flex justify-content-center">
+                    <button class="card h-100 shadow-sm border-0 text-start p-0 w-100" data-bs-toggle="modal" data-bs-target="#modalHardSkills" style="background: none; border: none;">
+                        <div class="card-body">
+                            <h5 class="card-title text-danger"><i class="fa fa-wrench me-2"></i><span data-i18n="hard_skills">Hard Skills</span></h5>
+                            <ul class="list-unstyled mb-0">
+                                <li data-i18n="desarrollo_fullstack">Desarrollo Fullstack</li>
+                                <li data-i18n="troubleshooting">Troubleshooting</li>
+                                <li><em data-i18n="haz_clic">Haz clic para ver más</em></li>
+                            </ul>
+                        </div>
+                    </button>
+                </div>
+                <div class="col-md-6 col-lg-4 d-flex justify-content-center">
+                    <button class="card h-100 shadow-sm border-0 text-start p-0 w-100" data-bs-toggle="modal" data-bs-target="#modalIdiomas" style="background: none; border: none;">
+                        <div class="card-body">
+                            <h5 class="card-title text-info"><i class="fa fa-language me-2"></i><span data-i18n="idiomas">Idiomas</span></h5>
+                            <ul class="list-unstyled mb-0">
+                                <li data-i18n="ingles">Inglés (Alto Nivel)</li>
+                                <li data-i18n="portugues">Portugués (Lengua Materna)</li>
+                                <li><em data-i18n="haz_clic">Haz clic para ver más</em></li>
+                            </ul>
+                        </div>
+                    </button>
+                </div>
+                <div class="col-md-6 col-lg-4 d-flex justify-content-center">
+                    <button class="card h-100 shadow-sm border-0 text-start p-0 w-100" data-bs-toggle="modal" data-bs-target="#modalExperiencia" style="background: none; border: none;">
+                        <div class="card-body">
+                            <h5 class="card-title text-warning"><i class="fa fa-briefcase me-2"></i><span data-i18n="experiencia">Experiencia</span></h5>
+                            <ul class="list-unstyled mb-0">
+                                <li><strong data-i18n="practicas">Prácticas | Vitaly</strong></li>
+                                <li data-i18n="frontend_angular">Desarrollo FrontEnd en Angular + Bootstrap</li>
+                                <li><em data-i18n="haz_clic">Haz clic para ver más</em></li>
+                            </ul>
+                        </div>
+                    </button>
+                </div>
+                <div class="col-md-6 col-lg-4 d-flex justify-content-center">
+                    <button class="card h-100 shadow-sm border-0 text-start p-0 w-100" data-bs-toggle="modal" data-bs-target="#modalEducacion" style="background: none; border: none;">
+                        <div class="card-body">
+                            <h5 class="card-title text-secondary"><i class="fa fa-graduation-cap me-2"></i><span data-i18n="educacion">Educación</span></h5>
+                            <ul class="list-unstyled mb-0">
+                                <li><strong data-i18n="secundario">Ensino Secundário</strong></li>
+                                <li><strong data-i18n="grado_superior">Ciclo Formativo de Grado Superior</strong></li>
+                                <li><em data-i18n="haz_clic">Haz clic para ver más</em></li>
+                            </ul>
+                        </div>
+                    </button>
                 </div>
             </div>
         </div>
