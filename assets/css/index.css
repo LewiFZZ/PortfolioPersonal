@@ -131,3 +131,21 @@ body {
     border-color: var(--color5);
 }
 
+/* Center the  perfil tecnico*/
+#perfil_tecnico {
+    width: 50%;
+    margin: auto;
+}
+
+@media (max-width: 991.98px) { /* Bootstrap md/lg breakpoint */
+    #perfil_tecnico {
+        width: 90%;
+    }
+}
+
+@media (max-width: 575.98px) { /* Bootstrap xs breakpoint */
+    #perfil_tecnico {
+        width: 100%;
+    }
+}
+
