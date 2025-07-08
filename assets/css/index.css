@@ -1,7 +1,18 @@
-/*
-    Elementos Individuales
-*/
-#profilePhoto{
+/* =====================
+   Paleta de colores y variables
+   ===================== */
+:root {
+    --color2: #00d4cf;
+    --color3: #00afbb;
+    --color4: #108ba0;
+    --color5: #2b687e;
+    --color6: #27afe9;
+}
+
+/* =====================
+   Elementos Individuales
+   ===================== */
+#profilePhoto {
     height: 256px;
     width: 256px;
     box-shadow: 0 0 10px black;
@@ -9,20 +20,19 @@
     background-color: white;
 }
 
-#listaIdiomas{
+#listaIdiomas {
     list-style: none;
 }
 
-/*
-    Estilos de tarjeta modal
-*/
+/* =====================
+   Estilos de tarjeta modal y skills
+   ===================== */
 figure {
     border: 1px solid black;
     padding: 0.5%;
     box-shadow: 3px 3px;
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
-
 figure:hover {
     transform: scale(1.05);
     background-color: #2c3e50;
@@ -34,121 +44,90 @@ figure:hover {
     gap: 20px; /* Espacio entre las tarjetas */
     justify-content: center;
 }
-
 .skill-card {
     background-color: #f1f1f1;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    width: 180px; /* Aumentar el ancho de la tarjeta */
-    min-height: 120px; /* Aumentar la altura mínima */
-    padding: 20px; /* Aumentar el espacio interno */
+    width: 180px;
+    min-height: 120px;
+    padding: 20px;
     margin: 10px;
     text-align: center;
     transition: transform 0.2s ease-in-out;
-    overflow: hidden; /* Evitar que el contenido se desborde */
-    display: flex; /* Usar flexbox */
-    flex-direction: column; /* Colocar texto en columna */
-    justify-content: center; /* Centrar verticalmente */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-
 .skill-card:hover {
     transform: translateY(-5px);
     background-color: #ddd;
 }
-
 .skill-card h3 {
-    font-size: 16px; /* Ajustar tamaño de la fuente */
+    font-size: 16px;
     color: #2c3e50;
-    margin: 0; /* Eliminar margen superior e inferior */
+    margin: 0;
 }
-
 .skill-card p {
-    font-size: 14px; /* Ajustar tamaño del texto si es necesario */
+    font-size: 14px;
     color: #7f8c8d;
-    margin-top: 5px; /* Espacio entre el título y el párrafo */
-    white-space: nowrap; /* Evitar que el texto se divida en varias líneas */
-    overflow: hidden; /* Ocultar el texto que no quepa */
-    text-overflow: ellipsis; /* Añadir puntos suspensivos (...) al final si se corta el texto */
+    margin-top: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-/* Responsive design para móviles */
-@media (max-width: 768px) {
-    .skills-container {
-        flex-direction: column;
-        align-items: center;
-    }
-    .skill-card {
-        width: 90%; /* Ancho en móviles */
-        min-height: 80px; /* Ajustar altura mínima en móviles */
-    }
+/* =====================
+   Layout general y utilidades
+   ===================== */
+html, body {
+    overflow-x: hidden !important;
 }
-
-/*
-    Paleta de colores
-*/
-:root {
-    --color2: #00d4cf;
-    --color3: #00afbb;
-    --color4: #108ba0;
-    --color5: #2b687e;
-    --color6: #27afe9;
-}
-
 body {
     background-color: var(--color1);
+    max-width: 100vw;
 }
 
+/* =====================
+   Navbar, header, footer
+   ===================== */
 .navbar {
     background-color: var(--color2);
 }
-
 .navbar-brand, .nav-link {
     color: var(--color6);
 }
-
 .header {
     background-color: var(--color3);
     color: var(--color6);
 }
-
-.section {
-    background-color: var(--color4);
-    color: var(--color1);
-}
-
 .footer {
     background-color: var(--color5);
     color: var(--color1);
 }
 
+/* =====================
+   Secciones y cards
+   ===================== */
+.section {
+    background-color: var(--color4);
+    color: var(--color1);
+}
+
+/* =====================
+   Botones y badges
+   ===================== */
 .btn-primary {
     background-color: var(--color6);
     border-color: var(--color6);
 }
-
 .btn-primary:hover {
     background-color: var(--color5);
     border-color: var(--color5);
 }
-
-/* Center the  perfil tecnico*/
-#perfil_tecnico {
-    width: 50%;
-    margin: auto;
+.badge {
+    /* hereda color de Bootstrap o se puede personalizar aquí */
 }
-
-@media (max-width: 991.98px) { /* Bootstrap md/lg breakpoint */
-    #perfil_tecnico {
-        width: 90%;
-    }
-}
-
-@media (max-width: 575.98px) { /* Bootstrap xs breakpoint */
-    #perfil_tecnico {
-        width: 100%;
-    }
-}
-
 .btn-selected, .btn.btn-selected {
     background: #fff !important;
     color: #232526 !important;
@@ -156,3 +135,35 @@ body {
     font-weight: bold;
 }
 
+/* =====================
+   Perfil técnico y centrado
+   ===================== */
+#perfil_tecnico {
+    width: 50%;
+    margin: auto;
+    overflow-x: hidden;
+}
+@media (max-width: 991.98px) { /* Bootstrap md/lg breakpoint */
+    #perfil_tecnico {
+        width: 90%;
+    }
+}
+@media (max-width: 575.98px) { /* Bootstrap xs breakpoint */
+    #perfil_tecnico {
+        width: 100%;
+    }
+}
+
+/* =====================
+   Responsive design para skills en móviles
+   ===================== */
+@media (max-width: 768px) {
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .skill-card {
+        width: 90%;
+        min-height: 80px;
+    }
+}
