@@ -149,3 +149,10 @@ body {
     }
 }
 
+.btn-selected, .btn.btn-selected {
+    background: #fff !important;
+    color: #232526 !important;
+    border: 2px solid #232526 !important;
+    font-weight: bold;
+}
+

@@ -21,10 +21,21 @@ function updateTexts() {
     });
 }
 
+function updateLanguageButtons(selected) {
+    const langs = ['es', 'en', 'pt'];
+    langs.forEach(lng => {
+        const btn = document.getElementById('btn-lang-' + lng);
+        if (btn) {
+            btn.classList.toggle('btn-selected', lng === selected);
+        }
+    });
+}
+
 
 // Para los botones de idioma
 function changeLanguage(lang) {
     loadTranslations(lang);
+    updateLanguageButtons(lang);
 }
 
 // Haz la función global para los botones
@@ -33,4 +44,5 @@ window.changeLanguage = changeLanguage;
 // Carga el idioma por defecto al cargar la página
 document.addEventListener('DOMContentLoaded', () => {
     loadTranslations(currentLang);
+    updateLanguageButtons(currentLang);
 });
