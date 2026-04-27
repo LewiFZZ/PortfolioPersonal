@@ -1,22 +1,2 @@
-.connections {
-  padding: 2rem 0;
-}
+/* Tailwind CSS handles all styling */
 
-.social-links {
-  display: flex;
-  gap: 1rem;
-}
-
-.social-links a {
-  color: #007bff;
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  border: 1px solid #007bff;
-  border-radius: 4px;
-  transition: background-color 0.3s;
-}
-
-.social-links a:hover {
-  background-color: #007bff;
-  color: white;
-}
