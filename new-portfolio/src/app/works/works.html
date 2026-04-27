@@ -1,20 +1,116 @@
 <section id="works" class="mb-16">
   <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">My Works</h2>
+
+  <!-- Disclaimer -->
+  <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mb-8 text-center">
+    <p class="text-yellow-800 text-sm">
+      <strong>Work in Progress:</strong> This section is currently a placeholder container. Projects
+      will be dynamically loaded and displayed here once the backend integration is complete.
+    </p>
+  </div>
+
   <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-    <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
-      <h3 class="text-xl font-semibold text-gray-900 mb-2">Project 1</h3>
-      <p class="text-gray-700 mb-4">Description of project 1. Technologies used: [list].</p>
-      <a href="#" target="_blank" class="text-blue-600 hover:text-blue-800 font-semibold"
-        >View Project →</a
-      >
+    <!-- SIEM Wazuh -->
+    <div
+      class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow flex flex-col justify-between"
+    >
+      <div>
+        <div class="flex items-center gap-2 mb-2">
+          <span
+            class="text-xs font-semibold uppercase tracking-wide text-blue-600 bg-blue-50 px-2 py-0.5 rounded"
+            >Blue Team</span
+          >
+        </div>
+        <h3 class="text-xl font-semibold text-gray-900 mb-2">SIEM Deployment — Wazuh</h3>
+        <p class="text-gray-700 mb-4">
+          Deployed and configured Wazuh on Ubuntu 24.04 LTS as a full SIEM/EDR solution. Integrated
+          with TheHive for case management and automated alert escalation via Python scripting.
+        </p>
+        <div class="flex flex-wrap gap-2 mb-4">
+          <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">Wazuh</span>
+          <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">Ubuntu 24.04</span>
+          <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">TheHive</span>
+          <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">Python</span>
+        </div>
+      </div>
+      <span class="text-gray-400 font-semibold cursor-not-allowed">View Project →</span>
     </div>
-    <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
-      <h3 class="text-xl font-semibold text-gray-900 mb-2">Project 2</h3>
-      <p class="text-gray-700 mb-4">Description of project 2. Technologies used: [list].</p>
-      <a href="#" target="_blank" class="text-blue-600 hover:text-blue-800 font-semibold"
-        >View Project →</a
-      >
+
+    <!-- NGFW Architecture -->
+    <div
+      class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow flex flex-col justify-between"
+    >
+      <div>
+        <div class="flex items-center gap-2 mb-2">
+          <span
+            class="text-xs font-semibold uppercase tracking-wide text-blue-600 bg-blue-50 px-2 py-0.5 rounded"
+            >Network Security</span
+          >
+        </div>
+        <h3 class="text-xl font-semibold text-gray-900 mb-2">NGFW Firewall Architecture</h3>
+        <p class="text-gray-700 mb-4">
+          Designed a segmented enterprise network with 3 NGFWs covering Internet, DMZ, and internal
+          zones. VLAN routing handled by an L3 switch, with isolated segments for surveillance, HR,
+          and LIMS systems.
+        </p>
+        <div class="flex flex-wrap gap-2 mb-4">
+          <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">NGFW</span>
+          <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">VLAN</span>
+          <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">DMZ</span>
+          <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">Zero Trust</span>
+        </div>
+      </div>
+      <span class="text-gray-400 font-semibold cursor-not-allowed">View Project →</span>
     </div>
-    <!-- Add more projects as needed -->
+
+    <!-- InsecureBankv2 -->
+    <div
+      class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow flex flex-col justify-between"
+    >
+      <div>
+        <div class="flex items-center gap-2 mb-2">
+          <span
+            class="text-xs font-semibold uppercase tracking-wide text-red-600 bg-red-50 px-2 py-0.5 rounded"
+            >Pentesting</span
+          >
+        </div>
+        <h3 class="text-xl font-semibold text-gray-900 mb-2">Android Vulnerability Analysis</h3>
+        <p class="text-gray-700 mb-4">
+          Performed static analysis on InsecureBankv2 using JADX. Identified hardcoded backend IPs,
+          exposed URLs, and insecure string handling in decompiled source code.
+        </p>
+        <div class="flex flex-wrap gap-2 mb-4">
+          <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">JADX</span>
+          <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">Android</span>
+          <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">OWASP Mobile</span>
+          <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">Static Analysis</span>
+        </div>
+      </div>
+      <span class="text-gray-400 font-semibold cursor-not-allowed">View Project →</span>
+    </div>
+
+    <!-- Portfolio -->
+    <div
+      class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow flex flex-col justify-between"
+    >
+      <div>
+        <div class="flex items-center gap-2 mb-2">
+          <span
+            class="text-xs font-semibold uppercase tracking-wide text-green-600 bg-green-50 px-2 py-0.5 rounded"
+            >Web Dev</span
+          >
+        </div>
+        <h3 class="text-xl font-semibold text-gray-900 mb-2">Personal Portfolio</h3>
+        <p class="text-gray-700 mb-4">
+          Designed and built this portfolio from scratch with Angular and Tailwind CSS. Features a
+          sticky nav with active section detection, scroll progress bar, and responsive layout.
+        </p>
+        <div class="flex flex-wrap gap-2 mb-4">
+          <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">Angular</span>
+          <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">Tailwind CSS</span>
+          <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">TypeScript</span>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
