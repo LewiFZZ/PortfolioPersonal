@@ -1,310 +1,751 @@
-<!DOCTYPE html>
+<!doctype html>
 <html data-bs-theme="light" lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
     <title>levijcdf - Home Page</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&amp;display=swap">
-    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/index.css">
-</head>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&amp;display=swap"
+    />
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/index.css" />
+  </head>
 
-<body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="72">
-    <nav class="navbar navbar-expand-lg fixed-top bg-secondary text-uppercase" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand" href="#page-top" data-i18n="navbar_brand">Levijcdf</a>
-            <button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler text-white bg-primary text-uppercase rounded" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio" data-i18n="navbar_caracteristicas">MIS CARACTERÍSTICAS</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about" data-i18n="navbar_about">SOBRE MÍ</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact" data-i18n="navbar_contact">CONTÁCTAME</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="assets/docs/CV_LEVI_JOSUE_CANDEIAS_FIGUEIREDO_IT.pdf" download>CV</a></li>
-                </ul>
-                <div class="ms-3 d-flex align-items-center gap-2">
-                    <button id="btn-lang-es" class="btn btn-sm btn-outline-light" onclick="changeLanguage('es')">ES</button>
-                    <button id="btn-lang-en" class="btn btn-sm btn-outline-light" onclick="changeLanguage('en')">EN</button>
-                    <button id="btn-lang-pt" class="btn btn-sm btn-outline-light" onclick="changeLanguage('pt')">PT</button>
-                </div>
-            </div>
+  <body
+    id="page-top"
+    data-bs-spy="scroll"
+    data-bs-target="#mainNav"
+    data-bs-offset="72"
+  >
+    <nav
+      class="navbar navbar-expand-lg fixed-top bg-secondary text-uppercase"
+      id="mainNav"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#page-top" data-i18n="navbar_brand"
+          >Levijcdf</a
+        >
+        <button
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          class="navbar-toggler text-white bg-primary text-uppercase rounded"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item mx-0 mx-lg-1">
+              <a
+                class="nav-link py-3 px-0 px-lg-3 rounded"
+                href="#portfolio"
+                data-i18n="navbar_caracteristicas"
+                >MIS CARACTERÍSTICAS</a
+              >
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a
+                class="nav-link py-3 px-0 px-lg-3 rounded"
+                href="#about"
+                data-i18n="navbar_about"
+                >SOBRE MÍ</a
+              >
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a
+                class="nav-link py-3 px-0 px-lg-3 rounded"
+                href="#contact"
+                data-i18n="navbar_contact"
+                >CONTÁCTAME</a
+              >
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a
+                class="nav-link py-3 px-0 px-lg-3 rounded"
+                href="assets/docs/LEVI_FIGUEIREDO_CV_2026.pdf"
+                download
+                >CV</a
+              >
+            </li>
+          </ul>
+          <div class="ms-3 d-flex align-items-center gap-2">
+            <button
+              id="btn-lang-es"
+              class="btn btn-sm btn-outline-light"
+              onclick="changeLanguage('es')"
+            >
+              ES
+            </button>
+            <button
+              id="btn-lang-en"
+              class="btn btn-sm btn-outline-light"
+              onclick="changeLanguage('en')"
+            >
+              EN
+            </button>
+            <button
+              id="btn-lang-pt"
+              class="btn btn-sm btn-outline-light"
+              onclick="changeLanguage('pt')"
+            >
+              PT
+            </button>
+          </div>
         </div>
+      </div>
     </nav>
     <header class="text-center text-white bg-primary masthead">
-        <div class="container">
-            <img class="img-fluid d-block mx-auto mb-4" src="assets/img/profile.png" id="profilePhoto" style="max-width: 300px; border-radius: 50%; box-shadow: 0 4px 16px rgba(0,0,0,0.2);">
-            <h1 class="mb-1" data-i18n="nombre">Levi Josué Candeias de Figueiredo</h1>
-            <h3 class="fw-light mb-2" data-i18n="titulo">Desarrollador Web Fullstack</h3>
-            <div class="mb-3">
-                <span class="badge bg-light text-primary me-2">+351 967-431-023</span>
-                <span class="badge bg-light text-primary me-2">+34 744-763-613</span>
-                <span class="badge bg-light text-primary me-2">levijcfigueiredowebdev@gmail.com</span>
-            </div>
-            <hr class="star-light">
-            <p class="lead mb-0" data-i18n="presentacion">Apasionado de las tecnologías, con experiencia en desarrollo de aplicaciones SPA modernas y APIs Rest seguras. Siempre aprendiendo y buscando aportar valor real a los proyectos.</p>
+      <div class="container">
+        <img
+          class="img-fluid d-block mx-auto mb-4"
+          src="assets/img/profile.png"
+          id="profilePhoto"
+          style="
+            max-width: 400px;
+            border-radius: 50%;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+          "
+        />
+        <h1 class="mb-1" data-i18n="nombre">
+          Levi Josué Candeias de Figueiredo
+        </h1>
+        <h3 class="fw-light mb-2" data-i18n="titulo">
+          Desarrollador Web Fullstack<br />Analista de Ciberseguridad
+          (estudiante)
+        </h3>
+        <div class="mb-3">
+          <span class="badge bg-light text-primary me-2">+351 967-431-023</span>
+          <span class="badge bg-light text-primary me-2">+34 744-763-613</span>
+          <span class="badge bg-light text-primary me-2"
+            >levijcfigueiredowebdev@gmail.com</span
+          >
         </div>
+        <hr class="star-light" />
+        <p class="lead mb-0" data-i18n="presentacion">
+          Apasionado de las tecnologías, con experiencia en desarrollo de
+          aplicaciones SPA modernas y APIs Rest seguras. Siempre aprendiendo y
+          buscando aportar valor real a los proyectos.
+        </p>
+      </div>
     </header>
-    
+
     <section id="portfolio" class="portfolio py-5 bg-light">
-        <div class="container">
-            <h2 class="text-uppercase text-center text-secondary mb-4" data-i18n="perfil_tecnico">PERFIL TÉCNICO Y PERSONAL</h2>
-            <div class="row g-4 justify-content-center align-items-stretch" id="perfil_tecnico">
-                <div class="col-md-6 col-lg-4 d-flex justify-content-center">
-                    <button class="card h-100 shadow-sm border-0 text-start p-0 w-100" data-bs-toggle="modal" data-bs-target="#modalTecnologias" style="background: none; border: none;">
-                        <div class="card-body">
-                            <h5 class="card-title text-primary"><i class="fa fa-cogs me-2"></i><span data-i18n="tecnologias">Tecnologías</span></h5>
-                            <ul class="list-unstyled mb-0">
-                                <li><strong data-i18n="frameworks">Frameworks:</strong> <span data-i18n="frameworks_lista">Angular, NestJS, ASP.NET Core...</span></li>
-                                <li><strong data-i18n="lenguajes">Lenguajes:</strong> <span data-i18n="lenguajes_lista">Java, Python, C...</span></li>
-                                <li><em data-i18n="haz_clic">Haz clic para ver más</em></li>
-                            </ul>
-                        </div>
-                    </button>
-                </div>
-                <div class="col-md-6 col-lg-4 d-flex justify-content-center">
-                    <button class="card h-100 shadow-sm border-0 text-start p-0 w-100" data-bs-toggle="modal" data-bs-target="#modalSoftSkills" style="background: none; border: none;">
-                        <div class="card-body">
-                            <h5 class="card-title text-success"><i class="fa fa-users me-2"></i><span data-i18n="soft_skills">Soft Skills</span></h5>
-                            <ul class="list-unstyled mb-0">
-                                <li data-i18n="trabajo_equipo">Trabajo en equipo</li>
-                                <li data-i18n="facilidad_idiomas">Facilidad en aprender idiomas</li>
-                                <li><em data-i18n="haz_clic">Haz clic para ver más</em></li>
-                            </ul>
-                        </div>
-                    </button>
-                </div>
-                <div class="col-md-6 col-lg-4 d-flex justify-content-center">
-                    <button class="card h-100 shadow-sm border-0 text-start p-0 w-100" data-bs-toggle="modal" data-bs-target="#modalHardSkills" style="background: none; border: none;">
-                        <div class="card-body">
-                            <h5 class="card-title text-danger"><i class="fa fa-wrench me-2"></i><span data-i18n="hard_skills">Hard Skills</span></h5>
-                            <ul class="list-unstyled mb-0">
-                                <li data-i18n="desarrollo_fullstack">Desarrollo Fullstack</li>
-                                <li data-i18n="troubleshooting">Troubleshooting</li>
-                                <li><em data-i18n="haz_clic">Haz clic para ver más</em></li>
-                            </ul>
-                        </div>
-                    </button>
-                </div>
-                <div class="col-md-6 col-lg-4 d-flex justify-content-center">
-                    <button class="card h-100 shadow-sm border-0 text-start p-0 w-100" data-bs-toggle="modal" data-bs-target="#modalIdiomas" style="background: none; border: none;">
-                        <div class="card-body">
-                            <h5 class="card-title text-info"><i class="fa fa-language me-2"></i><span data-i18n="idiomas">Idiomas</span></h5>
-                            <ul class="list-unstyled mb-0">
-                                <li data-i18n="ingles">Inglés (Alto Nivel)</li>
-                                <li data-i18n="portugues">Portugués (Lengua Materna)</li>
-                                <li><em data-i18n="haz_clic">Haz clic para ver más</em></li>
-                            </ul>
-                        </div>
-                    </button>
-                </div>
-                <div class="col-md-6 col-lg-4 d-flex justify-content-center">
-                    <button class="card h-100 shadow-sm border-0 text-start p-0 w-100" data-bs-toggle="modal" data-bs-target="#modalExperiencia" style="background: none; border: none;">
-                        <div class="card-body">
-                            <h5 class="card-title text-warning"><i class="fa fa-briefcase me-2"></i><span data-i18n="experiencia">Experiencia</span></h5>
-                            <ul class="list-unstyled mb-0">
-                                <li><strong data-i18n="practicas">Prácticas | Vitaly</strong></li>
-                                <li data-i18n="frontend_angular">Desarrollo FrontEnd en Angular + Bootstrap</li>
-                                <li><em data-i18n="haz_clic">Haz clic para ver más</em></li>
-                            </ul>
-                        </div>
-                    </button>
-                </div>
-                <div class="col-md-6 col-lg-4 d-flex justify-content-center">
-                    <button class="card h-100 shadow-sm border-0 text-start p-0 w-100" data-bs-toggle="modal" data-bs-target="#modalEducacion" style="background: none; border: none;">
-                        <div class="card-body">
-                            <h5 class="card-title text-secondary"><i class="fa fa-graduation-cap me-2"></i><span data-i18n="educacion">Educación</span></h5>
-                            <ul class="list-unstyled mb-0">
-                                <li><strong data-i18n="secundario">Ensino Secundário</strong></li>
-                                <li><strong data-i18n="grado_superior">Ciclo Formativo de Grado Superior</strong></li>
-                                <li><em data-i18n="haz_clic">Haz clic para ver más</em></li>
-                            </ul>
-                        </div>
-                    </button>
-                </div>
-            </div>
+      <div class="container">
+        <h2
+          class="text-uppercase text-center text-secondary mb-4"
+          data-i18n="perfil_tecnico"
+        >
+          PERFIL TÉCNICO Y PERSONAL
+        </h2>
+        <div
+          class="row g-4 justify-content-center align-items-stretch"
+          id="perfil_tecnico"
+        >
+          <div class="col-md-6 col-lg-4 d-flex justify-content-center">
+            <button
+              class="card h-100 shadow-sm border-0 text-start p-0 w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#modalTecnologias"
+              style="background: none; border: none"
+            >
+              <div class="card-body">
+                <h5 class="card-title text-primary">
+                  <i class="fa fa-cogs me-2"></i
+                  ><span data-i18n="tecnologias">Tecnologías</span>
+                </h5>
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <strong data-i18n="frameworks">Frameworks:</strong>
+                    <span data-i18n="frameworks_lista"
+                      >Angular, NestJS, ASP.NET Core...</span
+                    >
+                  </li>
+                  <li>
+                    <strong data-i18n="lenguajes">Lenguajes:</strong>
+                    <span data-i18n="lenguajes_lista">Java, Python, C...</span>
+                  </li>
+                  <li><em data-i18n="haz_clic">Haz clic para ver más</em></li>
+                </ul>
+              </div>
+            </button>
+          </div>
+          <div class="col-md-6 col-lg-4 d-flex justify-content-center">
+            <button
+              class="card h-100 shadow-sm border-0 text-start p-0 w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#modalSoftSkills"
+              style="background: none; border: none"
+            >
+              <div class="card-body">
+                <h5 class="card-title text-success">
+                  <i class="fa fa-users me-2"></i
+                  ><span data-i18n="soft_skills">Soft Skills</span>
+                </h5>
+                <ul class="list-unstyled mb-0">
+                  <li data-i18n="trabajo_equipo">Trabajo en equipo</li>
+                  <li data-i18n="facilidad_idiomas">
+                    Facilidad en aprender idiomas
+                  </li>
+                  <li><em data-i18n="haz_clic">Haz clic para ver más</em></li>
+                </ul>
+              </div>
+            </button>
+          </div>
+          <div class="col-md-6 col-lg-4 d-flex justify-content-center">
+            <button
+              class="card h-100 shadow-sm border-0 text-start p-0 w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#modalHardSkills"
+              style="background: none; border: none"
+            >
+              <div class="card-body">
+                <h5 class="card-title text-danger">
+                  <i class="fa fa-wrench me-2"></i
+                  ><span data-i18n="hard_skills">Hard Skills</span>
+                </h5>
+                <ul class="list-unstyled mb-0">
+                  <li data-i18n="desarrollo_fullstack">Desarrollo Fullstack</li>
+                  <li data-i18n="troubleshooting">Troubleshooting</li>
+                  <li><em data-i18n="haz_clic">Haz clic para ver más</em></li>
+                </ul>
+              </div>
+            </button>
+          </div>
+          <div class="col-md-6 col-lg-4 d-flex justify-content-center">
+            <button
+              class="card h-100 shadow-sm border-0 text-start p-0 w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#modalIdiomas"
+              style="background: none; border: none"
+            >
+              <div class="card-body">
+                <h5 class="card-title text-info">
+                  <i class="fa fa-language me-2"></i
+                  ><span data-i18n="idiomas">Idiomas</span>
+                </h5>
+                <ul class="list-unstyled mb-0">
+                  <li data-i18n="ingles">Inglés (Alto Nivel)</li>
+                  <li data-i18n="portugues">Portugués (Lengua Materna)</li>
+                  <li><em data-i18n="haz_clic">Haz clic para ver más</em></li>
+                </ul>
+              </div>
+            </button>
+          </div>
+          <div class="col-md-6 col-lg-4 d-flex justify-content-center">
+            <button
+              class="card h-100 shadow-sm border-0 text-start p-0 w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#modalExperiencia"
+              style="background: none; border: none"
+            >
+              <div class="card-body">
+                <h5 class="card-title text-warning">
+                  <i class="fa fa-briefcase me-2"></i
+                  ><span data-i18n="experiencia">Experiencia</span>
+                </h5>
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <strong data-i18n="practicas">Prácticas | Vitaly</strong>
+                  </li>
+                  <li data-i18n="frontend_angular">
+                    Desarrollo FrontEnd en Angular + Bootstrap
+                  </li>
+                  <li><em data-i18n="haz_clic">Haz clic para ver más</em></li>
+                </ul>
+              </div>
+            </button>
+          </div>
+          <div class="col-md-6 col-lg-4 d-flex justify-content-center">
+            <button
+              class="card h-100 shadow-sm border-0 text-start p-0 w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#modalEducacion"
+              style="background: none; border: none"
+            >
+              <div class="card-body">
+                <h5 class="card-title text-secondary">
+                  <i class="fa fa-graduation-cap me-2"></i
+                  ><span data-i18n="educacion">Educación</span>
+                </h5>
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <strong data-i18n="secundario">Ensino Secundário</strong>
+                  </li>
+                  <li>
+                    <strong data-i18n="grado_superior"
+                      >Ciclo Formativo de Grado Superior</strong
+                    >
+                  </li>
+                  <li><em data-i18n="haz_clic">Haz clic para ver más</em></li>
+                </ul>
+              </div>
+            </button>
+          </div>
         </div>
+      </div>
     </section>
-    
+
     <!-- Seccion de Informacion personal -->
     <section class="text-white bg-primary mb-0" id="about">
-        <div class="container">
-            <h2 class="text-uppercase text-center text-white" data-i18n="sobre_mi">Sobre mí</h2>
-            <hr class="star-light mb-5">
-            <div class="row">
-                <div class="col">
-                    <h1 class="sobremi" data-i18n="quien_soy_titulo">¿Quién Soy?</h1>
-                    <p style="font-size: 25px;" data-i18n="quien_soy_texto">
-                        Soy un <strong>Desarrollador Web</strong> y <strong>entusiasta de sistemas operativos y ciberseguridad</strong>.<br>
-                        Desde que tengo memoria, he sido un apasionado de las nuevas tecnologías y la innovación. 
-                        Me encanta el mundo de los videojuegos y todo lo que rodea la ficción, y siempre busco maneras de integrar mis pasiones en mis proyectos.
-                    </p>
-                </div>
-            </div>
-            <div class="text-center mt-4"></div>
-        </div>
+      <div class="container">
+        <h2 class="text-uppercase text-center text-white" data-i18n="sobre_mi">
+          Sobre mí
+        </h2>
+        <hr class="star-light mb-5" />
         <div class="row">
-            <div class="col">
-                <section class="py-4 py-xl-5">
-                    <div class="container">
-                        <h1 class="sobremi" data-i18n="como_trabajo_titulo">¿Cómo trabajo?</h1>
-                        <p style="font-size: 25px;" data-i18n="como_trabajo_texto">
-                            Mi prioridad es satisfacer las necesidades de su empresa mientras ofrezco un servicio eficiente y de calidad. 
-                            Puede contar conmigo para resolver sus problemas y brindarle aclaraciones siempre que lo necesite.
-                        </p>
-                    </div>
-                </section>
-            </div>
+          <div class="col">
+            <h1 class="sobremi" data-i18n="quien_soy_titulo">¿Quién Soy?</h1>
+            <p style="font-size: 25px" data-i18n="quien_soy_texto">
+              Soy un <strong>Desarrollador Web</strong> y
+              <strong>entusiasta de sistemas operativos y ciberseguridad</strong
+              >.<br />
+              Desde que tengo memoria, he sido un apasionado de las nuevas
+              tecnologías y la innovación. Me encanta el mundo de los
+              videojuegos y todo lo que rodea la ficción, y siempre busco
+              maneras de integrar mis pasiones en mis proyectos.
+            </p>
+          </div>
         </div>
-        <div class="row">
-            <div class="col">
-                <section class="py-4 py-xl-5">
-                    <div class="container">
-                        <h1 class="sobremi" data-i18n="donde_me_desplazo_titulo">¿Dónde me desplazo?</h1>
-                        <p style="font-size: 25px;" data-i18n="donde_me_desplazo_texto">
-                            Estoy dispuesto a desplazarme por Extremadura y Alentejo si es necesario para resolver cualquier tipo de problema. 
-                            Resido en Elvas, Portugal, por lo que priorizaré los desplazamientos más cercanos.
-                        </p>
-                    </div>
-                </section>
+        <div class="text-center mt-4"></div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <section class="py-4 py-xl-5">
+            <div class="container">
+              <h1 class="sobremi" data-i18n="como_trabajo_titulo">
+                ¿Cómo trabajo?
+              </h1>
+              <p style="font-size: 25px" data-i18n="como_trabajo_texto">
+                Mi prioridad es satisfacer las necesidades de su empresa
+                mientras ofrezco un servicio eficiente y de calidad. Puede
+                contar conmigo para resolver sus problemas y brindarle
+                aclaraciones siempre que lo necesite.
+              </p>
             </div>
+          </section>
         </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <section class="py-4 py-xl-5">
+            <div class="container">
+              <h1 class="sobremi" data-i18n="donde_me_desplazo_titulo">
+                ¿Dónde me desplazo?
+              </h1>
+              <p style="font-size: 25px" data-i18n="donde_me_desplazo_texto">
+                Estoy dispuesto a desplazarme por Extremadura y Alentejo si es
+                necesario para resolver cualquier tipo de problema. Resido en
+                Elvas, Portugal, por lo que priorizaré los desplazamientos más
+                cercanos.
+              </p>
+            </div>
+          </section>
+        </div>
+      </div>
     </section>
     <section id="contact">
-        <div class="container">
-            <h2 class="text-uppercase text-center text-secondary mb-0 display-4" data-i18n="contactame">Contáctame</h2>
-            <hr class="star-dark mb-5">
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <div class="text-center mb-4">
-                        <p class="lead" style="font-size: 1.5rem;" data-i18n="contacto_ayuda">¡Estoy aquí para ayudarte!</p>
-                        <p style="font-size: 1.25rem;" data-i18n="contacto_consulta">Puedes comunicarte conmigo para cualquier consulta o proyecto en el que estés interesado.</p>
-                    </div>
-                    <div class="contact-info text-center">
-                        <h4 class="text-uppercase mb-3" style="font-size: 1.5rem;" data-i18n="info_contacto">Información de Contacto</h4>
-                        <p style="font-size: 1.125rem;"><strong data-i18n="correo_electronico">Correo Electrónico:</strong> <a href="mailto:levijcfigueiredowebdev@gmail.com" class="text-decoration-none">levijcfigueiredowebdev@gmail.com</a></p>
-                        <div>
-                            <p style="font-size: 1.125rem;"><strong data-i18n="numeros_telefono">Números de Teléfono:</strong> <a href="tel:+34744763613" class="text-decoration-none">+34 744 76 36 13</a> / <a href="tel:+351967431023" class="text-decoration-none">+351 967 431 023</a></p>
-                        </div>
-                    </div>
-                    <div class="text-center">
-                        <p class="mt-4" style="font-size: 1.25rem;" data-i18n="contacto_dudas">¡No dudes en contactarme para discutir tus ideas!</p>
-                    </div>
-                </div>
+      <div class="container">
+        <h2
+          class="text-uppercase text-center text-secondary mb-0 display-4"
+          data-i18n="contactame"
+        >
+          Contáctame
+        </h2>
+        <hr class="star-dark mb-5" />
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="text-center mb-4">
+              <p
+                class="lead"
+                style="font-size: 1.5rem"
+                data-i18n="contacto_ayuda"
+              >
+                ¡Estoy aquí para ayudarte!
+              </p>
+              <p style="font-size: 1.25rem" data-i18n="contacto_consulta">
+                Puedes comunicarte conmigo para cualquier consulta o proyecto en
+                el que estés interesado.
+              </p>
             </div>
+            <div class="contact-info text-center">
+              <h4
+                class="text-uppercase mb-3"
+                style="font-size: 1.5rem"
+                data-i18n="info_contacto"
+              >
+                Información de Contacto
+              </h4>
+              <p style="font-size: 1.125rem">
+                <strong data-i18n="correo_electronico"
+                  >Correo Electrónico:</strong
+                >
+                <a
+                  href="mailto:levijcfigueiredowebdev@gmail.com"
+                  class="text-decoration-none"
+                  >levijcfigueiredowebdev@gmail.com</a
+                >
+              </p>
+              <div>
+                <p style="font-size: 1.125rem">
+                  <strong data-i18n="numeros_telefono"
+                    >Números de Teléfono:</strong
+                  >
+                  <a href="tel:+34744763613" class="text-decoration-none"
+                    >+34 744 76 36 13</a
+                  >
+                  /
+                  <a href="tel:+351967431023" class="text-decoration-none"
+                    >+351 967 431 023</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="text-center">
+              <p
+                class="mt-4"
+                style="font-size: 1.25rem"
+                data-i18n="contacto_dudas"
+              >
+                ¡No dudes en contactarme para discutir tus ideas!
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <div class="text-center text-white copyright py-4">
-        <div class="container">
-            <small data-i18n="copyright">Copyright © Levi Josué Candeias de Figueiredo 2025</small>
-            <div class="container pt-3">
-                <ul class="list-inline">
-                    <li class="list-inline-item">
-                        <a class="btn btn-outline-light text-center btn-social rounded-circle" role="button" href="https://github.com/LewiFZZ">
-                            <i class="fa fa-github fa-fw"></i>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a class="btn btn-outline-light text-center btn-social rounded-circle" role="button" href="https://www.linkedin.com/in/levi-josu%C3%A9-candeias-de-figueiredo-547082309/">
-                            <i class="fa fa-linkedin-square fa-fw"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+      <div class="container">
+        <small data-i18n="copyright"
+          >Copyright © Levi Josué Candeias de Figueiredo 2025</small
+        >
+        <div class="container pt-3">
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <a
+                class="btn btn-outline-light text-center btn-social rounded-circle"
+                role="button"
+                href="https://github.com/LewiFZZ"
+              >
+                <i class="fa fa-github fa-fw"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a
+                class="btn btn-outline-light text-center btn-social rounded-circle"
+                role="button"
+                href="https://www.linkedin.com/in/levi-josu%C3%A9-candeias-de-figueiredo-547082309/"
+              >
+                <i class="fa fa-linkedin-square fa-fw"></i>
+              </a>
+            </li>
+          </ul>
         </div>
+      </div>
     </div>
 
-    <div class="d-lg-none scroll-to-top position-fixed rounded"><a class="text-center d-block rounded text-white" href="#page-top"><i class="fa fa-chevron-up"></i></a></div>
+    <div class="d-lg-none scroll-to-top position-fixed rounded">
+      <a class="text-center d-block rounded text-white" href="#page-top"
+        ><i class="fa fa-chevron-up"></i
+      ></a>
+    </div>
     <!-- Modales de información detallada -->
     <!-- Modal Tecnologías -->
-    <div class="modal fade" id="modalTecnologias" tabindex="-1" aria-labelledby="modalTecnologiasLabel" aria-hidden="true">
+    <div
+      class="modal fade"
+      id="modalTecnologias"
+      tabindex="-1"
+      aria-labelledby="modalTecnologiasLabel"
+      aria-hidden="true"
+    >
       <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content shadow-lg rounded-4 border-0" style="background: linear-gradient(135deg, #f8fafc 80%, #e3e8f0 100%);">
-          <div class="modal-header bg-primary text-white rounded-top-4 border-0 align-items-center">
+        <div
+          class="modal-content shadow-lg rounded-4 border-0"
+          style="background: linear-gradient(135deg, #f8fafc 80%, #e3e8f0 100%)"
+        >
+          <div
+            class="modal-header bg-primary text-white rounded-top-4 border-0 align-items-center"
+          >
             <span class="me-2 fs-3"><i class="fa fa-cogs"></i></span>
-            <h5 class="modal-title fw-bold" id="modalTecnologiasLabel" data-i18n="modal_tecnologias_titulo">Tecnologías</h5>
-            <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            <h5
+              class="modal-title fw-bold"
+              id="modalTecnologiasLabel"
+              data-i18n="modal_tecnologias_titulo"
+            >
+              Tecnologías
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white ms-auto"
+              data-bs-dismiss="modal"
+              aria-label="Cerrar"
+            ></button>
           </div>
           <div class="modal-body py-4">
             <ul class="list-unstyled mb-0">
-              <li class="mb-2"><span class="badge bg-primary me-2" data-i18n="modal_frameworks">Frameworks</span><span data-i18n="modal_frameworks_lista">Angular, NestJS, ASP.NET Core, Java Springboot, Next.JS</span></li>
-              <li class="mb-2"><span class="badge bg-secondary me-2" data-i18n="modal_lenguajes">Lenguajes</span><span data-i18n="modal_lenguajes_lista">Java, Python, C, Bash, TypeScript, PHP</span></li>
-              <li class="mb-2"><span class="badge bg-info text-dark me-2" data-i18n="modal_bd">Bases de datos</span><span data-i18n="modal_bd_lista">MySQL, MariaDB, PostgreSQL, SQL Server, Oracle</span></li>
-              <li class="mb-2"><span class="badge bg-success me-2" data-i18n="modal_desktop">Aplicaciones de escritorio</span><span data-i18n="modal_desktop_lista">Java Swing, JavaFX, Electron</span></li>
-              <li class="mb-2"><span class="badge bg-dark me-2" data-i18n="modal_os">Sistemas operativos</span><span data-i18n="modal_os_lista">Linux Debian, Fedora, Arch</span></li>
-              <li class="mb-2"><span class="badge bg-warning text-dark me-2" data-i18n="modal_ia">Inteligencia Artificial</span><span data-i18n="modal_ia_lista">Cursor, Windsurf</span></li>
-              <li class="mb-2"><span class="badge bg-danger me-2" data-i18n="modal_despliegue">Despliegue</span><span data-i18n="modal_despliegue_lista">Apache</span></li>
+              <li class="mb-2">
+                <span class="badge bg-primary me-2" data-i18n="modal_frameworks"
+                  >Frameworks</span
+                ><span data-i18n="modal_frameworks_lista"
+                  >Angular, NestJS, ASP.NET Core, Java Springboot, Next.JS</span
+                >
+              </li>
+              <li class="mb-2">
+                <span
+                  class="badge bg-secondary me-2"
+                  data-i18n="modal_lenguajes"
+                  >Lenguajes</span
+                ><span data-i18n="modal_lenguajes_lista"
+                  >Java, Python, C, Bash, TypeScript, PHP</span
+                >
+              </li>
+              <li class="mb-2">
+                <span class="badge bg-info text-dark me-2" data-i18n="modal_bd"
+                  >Bases de datos</span
+                ><span data-i18n="modal_bd_lista"
+                  >MySQL, MariaDB, PostgreSQL, SQL Server, Oracle</span
+                >
+              </li>
+              <li class="mb-2">
+                <span class="badge bg-success me-2" data-i18n="modal_desktop"
+                  >Aplicaciones de escritorio</span
+                ><span data-i18n="modal_desktop_lista"
+                  >Java Swing, JavaFX, Electron</span
+                >
+              </li>
+              <li class="mb-2">
+                <span class="badge bg-dark me-2" data-i18n="modal_os"
+                  >Sistemas operativos</span
+                ><span data-i18n="modal_os_lista"
+                  >Linux Debian, Fedora, Arch</span
+                >
+              </li>
+              <li class="mb-2">
+                <span
+                  class="badge bg-warning text-dark me-2"
+                  data-i18n="modal_ia"
+                  >Inteligencia Artificial</span
+                ><span data-i18n="modal_ia_lista">Cursor, Windsurf</span>
+              </li>
+              <li class="mb-2">
+                <span class="badge bg-danger me-2" data-i18n="modal_despliegue"
+                  >Despliegue</span
+                ><span data-i18n="modal_despliegue_lista">Apache</span>
+              </li>
             </ul>
           </div>
         </div>
       </div>
     </div>
     <!-- Modal Soft Skills -->
-    <div class="modal fade" id="modalSoftSkills" tabindex="-1" aria-labelledby="modalSoftSkillsLabel" aria-hidden="true">
+    <div
+      class="modal fade"
+      id="modalSoftSkills"
+      tabindex="-1"
+      aria-labelledby="modalSoftSkillsLabel"
+      aria-hidden="true"
+    >
       <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content shadow-lg rounded-4 border-0" style="background: linear-gradient(135deg, #f8fafc 80%, #e3e8f0 100%);">
-          <div class="modal-header bg-success text-white rounded-top-4 border-0 align-items-center">
+        <div
+          class="modal-content shadow-lg rounded-4 border-0"
+          style="background: linear-gradient(135deg, #f8fafc 80%, #e3e8f0 100%)"
+        >
+          <div
+            class="modal-header bg-success text-white rounded-top-4 border-0 align-items-center"
+          >
             <span class="me-2 fs-3"><i class="fa fa-users"></i></span>
-            <h5 class="modal-title fw-bold" id="modalSoftSkillsLabel" data-i18n="modal_softskills_titulo">Soft Skills</h5>
-            <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            <h5
+              class="modal-title fw-bold"
+              id="modalSoftSkillsLabel"
+              data-i18n="modal_softskills_titulo"
+            >
+              Soft Skills
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white ms-auto"
+              data-bs-dismiss="modal"
+              aria-label="Cerrar"
+            ></button>
           </div>
           <div class="modal-body py-4">
             <ul class="list-unstyled mb-0">
-              <li class="mb-2"><i class="fa fa-check-circle text-success me-2"></i><span data-i18n="modal_softskills_1">Trabajo en equipo</span></li>
-              <li class="mb-2"><i class="fa fa-check-circle text-success me-2"></i><span data-i18n="modal_softskills_2">Facilidad en aprender idiomas</span></li>
-              <li class="mb-2"><i class="fa fa-check-circle text-success me-2"></i><span data-i18n="modal_softskills_3">Autodisciplina</span></li>
-              <li class="mb-2"><i class="fa fa-check-circle text-success me-2"></i><span data-i18n="modal_softskills_4">Comunicación</span></li>
-              <li class="mb-2"><i class="fa fa-check-circle text-success me-2"></i><span data-i18n="modal_softskills_5">Adaptabilidad</span></li>
-              <li class="mb-2"><i class="fa fa-check-circle text-success me-2"></i><span data-i18n="modal_softskills_6">Autodidacta</span></li>
-              <li class="mb-2"><i class="fa fa-check-circle text-success me-2"></i><span data-i18n="modal_softskills_7">Disposición a aprender nuevas tecnologías y adaptarme a las prácticas de la empresa</span></li>
+              <li class="mb-2">
+                <i class="fa fa-check-circle text-success me-2"></i
+                ><span data-i18n="modal_softskills_1">Trabajo en equipo</span>
+              </li>
+              <li class="mb-2">
+                <i class="fa fa-check-circle text-success me-2"></i
+                ><span data-i18n="modal_softskills_2"
+                  >Facilidad en aprender idiomas</span
+                >
+              </li>
+              <li class="mb-2">
+                <i class="fa fa-check-circle text-success me-2"></i
+                ><span data-i18n="modal_softskills_3">Autodisciplina</span>
+              </li>
+              <li class="mb-2">
+                <i class="fa fa-check-circle text-success me-2"></i
+                ><span data-i18n="modal_softskills_4">Comunicación</span>
+              </li>
+              <li class="mb-2">
+                <i class="fa fa-check-circle text-success me-2"></i
+                ><span data-i18n="modal_softskills_5">Adaptabilidad</span>
+              </li>
+              <li class="mb-2">
+                <i class="fa fa-check-circle text-success me-2"></i
+                ><span data-i18n="modal_softskills_6">Autodidacta</span>
+              </li>
+              <li class="mb-2">
+                <i class="fa fa-check-circle text-success me-2"></i
+                ><span data-i18n="modal_softskills_7"
+                  >Disposición a aprender nuevas tecnologías y adaptarme a las
+                  prácticas de la empresa</span
+                >
+              </li>
             </ul>
           </div>
         </div>
       </div>
     </div>
     <!-- Modal Hard Skills -->
-    <div class="modal fade" id="modalHardSkills" tabindex="-1" aria-labelledby="modalHardSkillsLabel" aria-hidden="true">
+    <div
+      class="modal fade"
+      id="modalHardSkills"
+      tabindex="-1"
+      aria-labelledby="modalHardSkillsLabel"
+      aria-hidden="true"
+    >
       <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content shadow-lg rounded-4 border-0" style="background: linear-gradient(135deg, #f8fafc 80%, #e3e8f0 100%);">
-          <div class="modal-header bg-danger text-white rounded-top-4 border-0 align-items-center">
+        <div
+          class="modal-content shadow-lg rounded-4 border-0"
+          style="background: linear-gradient(135deg, #f8fafc 80%, #e3e8f0 100%)"
+        >
+          <div
+            class="modal-header bg-danger text-white rounded-top-4 border-0 align-items-center"
+          >
             <span class="me-2 fs-3"><i class="fa fa-wrench"></i></span>
-            <h5 class="modal-title fw-bold" id="modalHardSkillsLabel" data-i18n="modal_hardskills_titulo">Hard Skills</h5>
-            <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            <h5
+              class="modal-title fw-bold"
+              id="modalHardSkillsLabel"
+              data-i18n="modal_hardskills_titulo"
+            >
+              Hard Skills
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white ms-auto"
+              data-bs-dismiss="modal"
+              aria-label="Cerrar"
+            ></button>
           </div>
           <div class="modal-body py-4">
             <ul class="list-unstyled mb-0">
-              <li class="mb-2"><i class="fa fa-cogs text-danger me-2"></i><span data-i18n="modal_hardskills_1">Desarrollo Fullstack</span></li>
-              <li class="mb-2"><i class="fa fa-bug text-danger me-2"></i><span data-i18n="modal_hardskills_2">Troubleshooting</span></li>
-              <li class="mb-2"><i class="fa fa-lock text-danger me-2"></i><span data-i18n="modal_hardskills_3">Desarrollo de APIs Restful seguras y eficientes</span></li>
-              <li class="mb-2"><i class="fa fa-desktop text-danger me-2"></i><span data-i18n="modal_hardskills_4">Diseño de interfaces gráficas</span></li>
-              <li class="mb-2"><i class="fa fa-cloud-upload text-danger me-2"></i><span data-i18n="modal_hardskills_5">Despliegue de aplicaciones en hosting</span></li>
+              <li class="mb-2">
+                <i class="fa fa-cogs text-danger me-2"></i
+                ><span data-i18n="modal_hardskills_1"
+                  >Desarrollo Fullstack</span
+                >
+              </li>
+              <li class="mb-2">
+                <i class="fa fa-bug text-danger me-2"></i
+                ><span data-i18n="modal_hardskills_2">Troubleshooting</span>
+              </li>
+              <li class="mb-2">
+                <i class="fa fa-lock text-danger me-2"></i
+                ><span data-i18n="modal_hardskills_3"
+                  >Desarrollo de APIs Restful seguras y eficientes</span
+                >
+              </li>
+              <li class="mb-2">
+                <i class="fa fa-desktop text-danger me-2"></i
+                ><span data-i18n="modal_hardskills_4"
+                  >Diseño de interfaces gráficas</span
+                >
+              </li>
+              <li class="mb-2">
+                <i class="fa fa-cloud-upload text-danger me-2"></i
+                ><span data-i18n="modal_hardskills_5"
+                  >Despliegue de aplicaciones en hosting</span
+                >
+              </li>
             </ul>
           </div>
         </div>
       </div>
     </div>
     <!-- Modal Idiomas -->
-    <div class="modal fade" id="modalIdiomas" tabindex="-1" aria-labelledby="modalIdiomasLabel" aria-hidden="true">
+    <div
+      class="modal fade"
+      id="modalIdiomas"
+      tabindex="-1"
+      aria-labelledby="modalIdiomasLabel"
+      aria-hidden="true"
+    >
       <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content shadow-lg rounded-4 border-0" style="background: linear-gradient(135deg, #f8fafc 80%, #e3e8f0 100%);">
-          <div class="modal-header bg-info text-white rounded-top-4 border-0 align-items-center">
+        <div
+          class="modal-content shadow-lg rounded-4 border-0"
+          style="background: linear-gradient(135deg, #f8fafc 80%, #e3e8f0 100%)"
+        >
+          <div
+            class="modal-header bg-info text-white rounded-top-4 border-0 align-items-center"
+          >
             <span class="me-2 fs-3"><i class="fa fa-language"></i></span>
-            <h5 class="modal-title fw-bold" id="modalIdiomasLabel" data-i18n="modal_idiomas_titulo">Idiomas</h5>
-            <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            <h5
+              class="modal-title fw-bold"
+              id="modalIdiomasLabel"
+              data-i18n="modal_idiomas_titulo"
+            >
+              Idiomas
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white ms-auto"
+              data-bs-dismiss="modal"
+              aria-label="Cerrar"
+            ></button>
           </div>
           <div class="modal-body py-4">
             <div class="row text-center">
               <div class="col-4">
-                <span class="badge bg-info text-dark fs-6 mb-2" data-i18n="modal_idiomas_portugues">Portugués</span>
-                <div class="fw-bold" data-i18n="modal_idiomas_portugues_nivel">Nativo</div>
+                <span
+                  class="badge bg-info text-dark fs-6 mb-2"
+                  data-i18n="modal_idiomas_portugues"
+                  >Portugués</span
+                >
+                <div class="fw-bold" data-i18n="modal_idiomas_portugues_nivel">
+                  Nativo
+                </div>
               </div>
               <div class="col-4">
-                <span class="badge bg-info text-dark fs-6 mb-2" data-i18n="modal_idiomas_castellano">Castellano</span>
-                <div class="fw-bold" data-i18n="modal_idiomas_castellano_nivel">Nativo</div>
+                <span
+                  class="badge bg-info text-dark fs-6 mb-2"
+                  data-i18n="modal_idiomas_castellano"
+                  >Castellano</span
+                >
+                <div class="fw-bold" data-i18n="modal_idiomas_castellano_nivel">
+                  Nativo
+                </div>
               </div>
               <div class="col-4">
-                <span class="badge bg-info text-dark fs-6 mb-2" data-i18n="modal_idiomas_ingles">Inglés</span>
-                <div class="fw-bold" data-i18n="modal_idiomas_ingles_nivel">Alto Nivel</div>
+                <span
+                  class="badge bg-info text-dark fs-6 mb-2"
+                  data-i18n="modal_idiomas_ingles"
+                  >Inglés</span
+                >
+                <div class="fw-bold" data-i18n="modal_idiomas_ingles_nivel">
+                  Alto Nivel
+                </div>
               </div>
             </div>
           </div>
@@ -312,44 +753,148 @@
       </div>
     </div>
     <!-- Modal Experiencia -->
-    <div class="modal fade" id="modalExperiencia" tabindex="-1" aria-labelledby="modalExperienciaLabel" aria-hidden="true">
+    <div
+      class="modal fade"
+      id="modalExperiencia"
+      tabindex="-1"
+      aria-labelledby="modalExperienciaLabel"
+      aria-hidden="true"
+    >
       <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content shadow-lg rounded-4 border-0" style="background: linear-gradient(135deg, #f8fafc 80%, #e3e8f0 100%);">
-          <div class="modal-header bg-warning text-dark rounded-top-4 border-0 align-items-center">
+        <div
+          class="modal-content shadow-lg rounded-4 border-0"
+          style="background: linear-gradient(135deg, #f8fafc 80%, #e3e8f0 100%)"
+        >
+          <div
+            class="modal-header bg-warning text-dark rounded-top-4 border-0 align-items-center"
+          >
             <span class="me-2 fs-3"><i class="fa fa-briefcase"></i></span>
-            <h5 class="modal-title fw-bold" id="modalExperienciaLabel" data-i18n="modal_experiencia_titulo">Experiencia</h5>
-            <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            <h5
+              class="modal-title fw-bold"
+              id="modalExperienciaLabel"
+              data-i18n="modal_experiencia_titulo"
+            >
+              Experiencia
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white ms-auto"
+              data-bs-dismiss="modal"
+              aria-label="Cerrar"
+            ></button>
           </div>
           <div class="modal-body py-4">
             <ul class="list-unstyled mb-0">
-              <li class="mb-2"><span class="badge bg-warning text-dark me-2" data-i18n="modal_experiencia_practicas">Prácticas Vitaly</span> <span class="text-muted" data-i18n="modal_experiencia_fecha">Enero 2025 - Junio 2025</span></li>
-              <li class="mb-2"><i class="fa fa-code text-warning me-2"></i><span data-i18n="modal_experiencia_1">Desarrollo FrontEnd en Angular y Bootstrap</span></li>
-              <li class="mb-2"><i class="fa fa-server text-warning me-2"></i><span data-i18n="modal_experiencia_2">Mantenimiento de APIs Restful en SpringBoot</span></li>
-              <li class="mb-2"><i class="fa fa-database text-warning me-2"></i><span data-i18n="modal_experiencia_3">Administración de BD Oracle</span></li>
-              <li class="mb-2"><i class="fa fa-cubes text-warning me-2"></i><span data-i18n="modal_experiencia_4">Mantenimiento de Microservicios Java SpringBoot</span></li>
+              <li class="mb-2">
+                <span
+                  class="badge bg-warning text-dark me-2"
+                  data-i18n="modal_experiencia_practicas"
+                  >Prácticas Vitaly</span
+                >
+                <span class="text-muted" data-i18n="modal_experiencia_fecha"
+                  >Enero 2025 - Junio 2025</span
+                >
+              </li>
+              <li class="mb-2">
+                <i class="fa fa-code text-warning me-2"></i
+                ><span data-i18n="modal_experiencia_1"
+                  >Desarrollo FrontEnd en Angular y Bootstrap</span
+                >
+              </li>
+              <li class="mb-2">
+                <i class="fa fa-server text-warning me-2"></i
+                ><span data-i18n="modal_experiencia_2"
+                  >Mantenimiento de APIs Restful en SpringBoot</span
+                >
+              </li>
+              <li class="mb-2">
+                <i class="fa fa-database text-warning me-2"></i
+                ><span data-i18n="modal_experiencia_3"
+                  >Administración de BD Oracle</span
+                >
+              </li>
+              <li class="mb-2">
+                <i class="fa fa-cubes text-warning me-2"></i
+                ><span data-i18n="modal_experiencia_4"
+                  >Mantenimiento de Microservicios Java SpringBoot</span
+                >
+              </li>
             </ul>
           </div>
         </div>
       </div>
     </div>
     <!-- Modal Educación -->
-    <div class="modal fade" id="modalEducacion" tabindex="-1" aria-labelledby="modalEducacionLabel" aria-hidden="true">
+    <div
+      class="modal fade"
+      id="modalEducacion"
+      tabindex="-1"
+      aria-labelledby="modalEducacionLabel"
+      aria-hidden="true"
+    >
       <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content shadow-lg rounded-4 border-0" style="background: linear-gradient(135deg, #f8fafc 80%, #e3e8f0 100%);">
-          <div class="modal-header bg-secondary text-white rounded-top-4 border-0 align-items-center">
+        <div
+          class="modal-content shadow-lg rounded-4 border-0"
+          style="background: linear-gradient(135deg, #f8fafc 80%, #e3e8f0 100%)"
+        >
+          <div
+            class="modal-header bg-secondary text-white rounded-top-4 border-0 align-items-center"
+          >
             <span class="me-2 fs-3"><i class="fa fa-graduation-cap"></i></span>
-            <h5 class="modal-title fw-bold" id="modalEducacionLabel" data-i18n="modal_educacion_titulo">Educación</h5>
-            <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            <h5
+              class="modal-title fw-bold"
+              id="modalEducacionLabel"
+              data-i18n="modal_educacion_titulo"
+            >
+              Educación
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white ms-auto"
+              data-bs-dismiss="modal"
+              aria-label="Cerrar"
+            ></button>
           </div>
           <div class="modal-body py-4">
             <ul class="list-unstyled mb-0">
               <li class="mb-3">
-                <span class="badge bg-secondary me-2" data-i18n="modal_educacion_secundario">Ensino Secundário</span>
-                <div class="small text-muted" data-i18n="modal_educacion_secundario_detalle">Curso Cientifico-Humanistico de Ciencias e Tecnologias, Escola Secundaria D. Sancho II, Elvas, Portugal, 2020-2023</div>
+                <span
+                  class="badge bg-secondary me-2"
+                  data-i18n="modal_educacion_secundario"
+                  >Ensino Secundário</span
+                >
+                <div
+                  class="small text-muted"
+                  data-i18n="modal_educacion_secundario_detalle"
+                >
+                  Curso Cientifico-Humanistico de Ciencias e Tecnologias, Escola
+                  Secundaria D. Sancho II, Elvas, Portugal, 2020-2023
+                </div>
               </li>
               <li>
-                <span class="badge bg-secondary me-2" data-i18n="modal_educacion_grado">Ciclo Formativo de Grado Superior</span>
-                <div class="small text-muted" data-i18n="modal_educacion_grado_detalle">Desarrollo de Aplicaciones Web, Escuela Virgen de Guadalupe, Badajoz, 2023-2025</div>
+                <span
+                  class="badge bg-secondary me-2"
+                  data-i18n="modal_educacion_grado"
+                  >Ciclo Formativo de Grado Superior</span
+                >
+                <div
+                  class="small text-muted"
+                  data-i18n="modal_educacion_grado_detalle"
+                >
+                  Desarrollo de Aplicaciones Web, Escuela Virgen de Guadalupe,
+                  Badajoz, 2023-2025
+                </div>
+              </li>
+              <li>
+                <span class="badge bg-secondary me-2">Máster FP</span>
+                <div
+                  class="small text-muted"
+                  data-i18n="modal_educacion_master_detalle"
+                >
+                  Ciberseguridad en Entornos de las Tecnologías de la
+                  Información, Innovación en Formación Profesional (iFP),
+                  2025-2027 (previsto)
+                </div>
               </li>
             </ul>
           </div>
@@ -361,6 +906,5 @@
     <script src="assets/js/freelancer.js"></script>
     <!-- Scripts de Traduccion -->
     <script src="assets/js/translations.js"></script>
-</body>
-
+  </body>
 </html>
