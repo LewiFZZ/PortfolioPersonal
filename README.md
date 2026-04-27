@@ -33,7 +33,7 @@ This portfolio automatically translates to the visitor's browser language using 
 
 ## 🤖 Built with GitHub Copilot
 
-This project was developed with efficient use of **GitHub Copilot** throughout the workflow — from component scaffolding to configuration and debugging. If you're a potential employer, this is intentional: I believe knowing how to leverage AI tooling effectively is a core skill for modern developers.
+This project was developed with efficient use of **GitHub Copilot** throughout the workflow — from component scaffolding to configuration and debugging. I treat AI tooling as a productivity accelerator, while keeping full responsibility for the architecture and implementation.
 
 ## 📁 Source Code
 
