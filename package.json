@@ -1,0 +1,26 @@
+{
+  "name": "portfoliopersonal",
+  "version": "1.0.0",
+  "description": "My personal portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LewiFZZ/PortfolioPersonal.git"
+  },
+  "keywords": [
+    "Curriculum",
+    "CV",
+    "Cybersecurity",
+    "Fullstack",
+    "Developer"
+  ],
+  "author": "Leví Josué Candeias de Figueiredo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LewiFZZ/PortfolioPersonal/issues"
+  },
+  "homepage": "https://github.com/LewiFZZ/PortfolioPersonal#readme"
+}
