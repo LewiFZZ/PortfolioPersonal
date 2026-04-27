@@ -1,0 +1,28 @@
+.works {
+  padding: 2rem 0;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.project {
+  border: 1px solid #e9ecef;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.project h3 {
+  margin-top: 0;
+}
+
+.project a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
