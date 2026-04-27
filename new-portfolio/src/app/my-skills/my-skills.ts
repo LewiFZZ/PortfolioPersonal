@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component, signal, OnDestroy, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 interface Skill {
@@ -15,7 +15,7 @@ interface Skill {
   templateUrl: './my-skills.html',
   styleUrl: './my-skills.css',
 })
-export class MySkills {
+export class MySkills implements OnInit, OnDestroy {
   skills = signal<Skill[]>([
     {
       name: 'Cybersecurity',
@@ -67,18 +67,34 @@ export class MySkills {
     },
   ]);
 
-  protected currentIndex = signal(0);
-  protected selectedSkill = signal<Skill | null>(null);
-  protected isModalOpen = signal(false);
+  currentIndex = signal(0);
+  cardsPerView = signal(1);
+  selectedSkill = signal<Skill | null>(null);
+  isModalOpen = signal(false);
 
-  get visibleSkills() {
-    const skills = this.skills();
-    const start = this.currentIndex();
-    return [
-      skills[start % skills.length],
-      skills[(start + 1) % skills.length],
-      skills[(start + 2) % skills.length],
-    ];
+  private updateCardsPerView = () => {
+    if (typeof window === 'undefined') {
+      this.cardsPerView.set(1);
+      return;
+    }
+    this.cardsPerView.set(window.matchMedia('(min-width: 768px)').matches ? 3 : 1);
+  };
+
+  ngOnInit() {
+    this.updateCardsPerView();
+    if (typeof window !== 'undefined') {
+      window.addEventListener('resize', this.updateCardsPerView);
+    }
+  }
+
+  ngOnDestroy() {
+    if (typeof window !== 'undefined') {
+      window.removeEventListener('resize', this.updateCardsPerView);
+    }
+  }
+
+  get slideTransform() {
+    return `translateX(-${(this.currentIndex() * 100) / this.cardsPerView()}%)`;
   }
 
   nextSlide() {

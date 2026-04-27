@@ -1,30 +1,44 @@
-<section id="connections" class="mb-16">
-  <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">My Connections</h2>
-  <div class="flex gap-4 flex-wrap">
+<section id="connections" class="mb-16 text-center">
+  <h2 class="text-3xl font-bold text-gray-800 mb-12">My Connections</h2>
+  <div class="grid grid-cols-1 gap-4 max-w-sm mx-auto sm:grid-cols-2 sm:max-w-lg">
     <a
       href="https://linkedin.com/in/yourprofile"
       target="_blank"
       aria-label="LinkedIn"
-      class="px-4 py-2 border-2 border-blue-600 text-blue-600 rounded-lg hover:bg-blue-600 hover:text-white transition-colors font-semibold"
+      class="group flex h-20 w-20 items-center justify-center rounded-3xl border border-blue-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg sm:h-24 sm:w-24 mx-auto"
     >
-      LinkedIn
+      <span class="sr-only">LinkedIn</span>
+      <svg
+        class="h-10 w-10 text-blue-600"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        aria-hidden="true"
+      >
+        <path
+          d="M20.447 20.452h-3.554v-5.569c0-1.328-.025-3.039-1.852-3.039-1.853 0-2.136 1.447-2.136 2.942v5.666H9.351V9h3.414v1.561h.049c.476-.899 1.637-1.848 3.369-1.848 3.601 0 4.268 2.37 4.268 5.455v6.284zM5.337 7.433a2.062 2.062 0 1 1 0-4.123 2.062 2.062 0 0 1 0 4.123zm1.777 13.019H3.56V9h3.554v11.452z"
+        />
+      </svg>
     </a>
+
     <a
       href="https://github.com/yourusername"
       target="_blank"
       aria-label="GitHub"
-      class="px-4 py-2 border-2 border-gray-900 text-gray-900 rounded-lg hover:bg-gray-900 hover:text-white transition-colors font-semibold"
+      class="group flex h-20 w-20 items-center justify-center rounded-3xl border border-gray-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg sm:h-24 sm:w-24 mx-auto"
     >
-      GitHub
+      <span class="sr-only">GitHub</span>
+      <svg
+        class="h-10 w-10 text-gray-900"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        aria-hidden="true"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.867 8.166 6.839 9.489.5.092.682-.217.682-.483 0-.237-.009-.868-.014-1.703-2.782.604-3.369-1.342-3.369-1.342-.454-1.152-1.11-1.459-1.11-1.459-.908-.62.069-.608.069-.608 1.004.071 1.532 1.032 1.532 1.032.892 1.529 2.341 1.088 2.91.833.091-.647.35-1.088.636-1.339-2.22-.253-4.555-1.111-4.555-4.945 0-1.091.39-1.983 1.029-2.68-.103-.253-.446-1.273.098-2.654 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.852.004 1.71.115 2.512.337 1.909-1.294 2.748-1.025 2.748-1.025.545 1.381.202 2.401.1 2.654.64.697 1.028 1.589 1.028 2.68 0 3.845-2.338 4.689-4.566 4.936.359.31.678.923.678 1.861 0 1.343-.012 2.427-.012 2.756 0 .269.18.58.688.482A10.009 10.009 0 0 0 22 12c0-5.523-4.477-10-10-10z"
+        />
+      </svg>
     </a>
-    <a
-      href="https://twitter.com/yourusername"
-      target="_blank"
-      aria-label="Twitter"
-      class="px-4 py-2 border-2 border-sky-400 text-sky-400 rounded-lg hover:bg-sky-400 hover:text-white transition-colors font-semibold"
-    >
-      Twitter
-    </a>
-    <!-- Add more social links as needed -->
   </div>
 </section>
